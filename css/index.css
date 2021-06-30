@@ -16,13 +16,16 @@ header .header-top ul{
 }
 header .header-mid{
     width:100%; height:15vh;
-    background:url('img/gugus_logo.jpg') center no-repeat;
     border-top:1px solid #000;
     border-bottom:1px solid #000;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
 /* nav menu */
 .menu{
+    vertical-align:middle;
     display:flex;
     justify-content: space-around;
     align-items:center;
@@ -30,10 +33,15 @@ header .header-mid{
     font-size: 1.25rem;
     border-bottom:1px solid #aaa;
 }
+.menu .menu-level-1 li a img{
+    width:50%; 
+    /* height:70%; */
+}
 .menu .menu-level-1{
     width:50%;
     display:flex;
     justify-content: space-around;
+    align-items:center;
 }
 .menu .menu-level-1 li{position: relative;}
 .menu .menu-level-2{
@@ -74,6 +82,11 @@ header .header-mid{
 }
 .menu .menu-level-1 > li:hover > ul > li:hover > ul{
     display:flex;
+}
+.menu span{width:20rem;}
+.menu span a img{
+    vertical-align:middle;
+    width:5%;
 }
 /* after > */
 .menu-level-1 > li:nth-of-type(2) > .menu-level-2 > li:nth-of-type(-n+2) > a::after,
@@ -151,7 +164,6 @@ main .auto-slide .button a .btn-right{} */
     border:1px solid #f00;
     /* display:none; */
 }
-
 /* new-items */
 main .new-items div{
     display:flex;
@@ -164,7 +176,6 @@ main .new-items figure img{width:100%;}
 
 /* season-items */
 main .season-items{display:flex;}
-
 
 /* mds-pick */
 main .mds-pick{display:flex;}
